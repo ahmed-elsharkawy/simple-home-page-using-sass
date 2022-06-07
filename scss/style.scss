@@ -1,0 +1,94 @@
+@import "reset";
+@import "grid";
+@import "config";
+// @import "media";
+@import "btns";
+
+header {
+  @include set-background($primary-color);
+  padding: 15px 0;
+  .head-data {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.design {
+  @include set-background($secondary-color);
+  padding: 50px 0 50px;
+
+  img {
+    width: 100%;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+  p {
+    margin: 20px 0;
+    width: 90%;
+  }
+}
+
+.slices {
+  padding: 50px 0 50px;
+  .head,
+  .foot {
+    padding: 20px;
+    background-color: cadetblue;
+    color: $secondary-color;
+    font-size: 30px;
+    font-family: $font-stack;
+  }
+  img {
+    width: 100%;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+  p {
+    margin: 20px 0;
+    width: 90%;
+  }
+}
+
+.cards h2 {
+  text-align: center;
+  font-family: $font-stack;
+  font-size: 35px;
+  padding: 50px;
+}
+.card {
+  font-family: $font-stack;
+  margin: 50px;
+  box-shadow: 1px 1px 5px #9f9f9f;
+
+  div {
+    padding: 0 30px;
+    border-bottom: 1px solid #999;
+  }
+  .card__head {
+    font-size: 30px;
+    padding: 30px;
+  }
+  .card__foot {
+    padding: 10px 30px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  .card--theme-blue {
+    background-color: cadetblue;
+  }
+  .card--theme-black {
+    background-color: #999;
+  }
+}
+
+@media (max-width: 600px) {
+  .design-part,
+  .card-container {
+    width: 100%;
+  }
+}
